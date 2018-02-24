@@ -42,8 +42,7 @@
               <div class="comment-body bb">
                 <div class="comment-avatar">
                   <div class="avatar">
-                    <!-- <img src="images/sample-author1.jpg"> -->
-                    <%= image_tag('sample-author1.jpg') %>
+                    <%= image_tag('sample-author1.jpg', style: "width: 60px; height: 60px;") %>
                   </div>
                 </div>
                 <div class="comment-text">
@@ -69,7 +68,7 @@
           </h3>
         </div>
         <form class="mt-20">
-          
+
           <%= form_for [@post_image, @post_comment] do |f| %>
           <div class="row">
             <div class="col-sm-12">
